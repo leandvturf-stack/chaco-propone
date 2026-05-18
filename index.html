@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -159,7 +160,7 @@ function App() {
       <div style={{textAlign:"center",marginBottom:32}}>
         <div style={{width:64,height:64,background:PURPLE,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 12px",color:"#fff",fontSize:22,fontWeight:500}}>CP</div>
         <div style={{fontSize:20,fontWeight:500}}>Chaco Propone</div>
-        <div style={{fontSize:13,color:"#666",marginTop:4}}>Libertad Avanza Chaco Juventud</div>
+        <div style={{fontSize:13,color:"#666",marginTop:4}}>Sen. Juan Cruz Godoy · Libertad Avanza Chaco</div>
       </div>
       <div style={{background:"#fff",border:"1px solid #e5e5e5",borderRadius:12,padding:"24px 20px"}}>
         <Inp label="Tu nombre" value={user} onChange={e=>setUser(e.target.value)} placeholder="Nombre y apellido"/>
@@ -178,7 +179,7 @@ function App() {
           <div style={{width:34,height:34,background:"#fff",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:500,fontSize:12,color:PURPLE}}>CP</div>
           <div>
             <div style={{color:"#fff",fontSize:15,fontWeight:500}}>Chaco Propone</div>
-            <div style={{color:"rgba(255,255,255,0.7)",fontSize:11}}>{user||"Militante"} · {role==="admin"?"Panel Godoy":"Militante"}</div>
+            <div style={{color:"rgba(255,255,255,0.7)",fontSize:11}}>Sen. Juan Cruz Godoy · LLA Chaco</div>
           </div>
         </div>
         <button onClick={()=>{setScreen("login");setPass("");setUser("");}} style={{background:"none",border:"none",color:"rgba(255,255,255,0.7)",cursor:"pointer",fontSize:12}}>Salir</button>
