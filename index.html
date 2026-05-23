@@ -10,6 +10,7 @@
 <style>
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:system-ui,sans-serif;background:#f4f4f4;min-height:100vh;}
+  .app-header{background:linear-gradient(rgba(75,44,138,0.85),rgba(75,44,138,0.92)),url('https://res.cloudinary.com/djml0aqsp/image/upload/446667w790h527c.jpg_qup8c2') center/cover no-repeat;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;}
   input,select,textarea,button{font-family:inherit;}
 </style>
 </head>
@@ -173,7 +174,7 @@ function App() {
 
   return (
     <div style={{maxWidth:420,margin:"0 auto",background:"#fff",minHeight:"100vh"}}>
-      <div style={{background:PURPLE,padding:"14px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"sticky",top:0,zIndex:10}}>
+      <div class="app-header">
         <div style={{display:"flex",alignItems:"center",gap:10}}>
           <div style={{width:34,height:34,background:"#fff",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:500,fontSize:12,color:PURPLE}}>CP</div>
           <div>
