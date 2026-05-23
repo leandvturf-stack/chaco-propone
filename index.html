@@ -10,7 +10,8 @@
 <style>
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:system-ui,sans-serif;background:#f4f4f4;min-height:100vh;}
-  .app-header{background:linear-gradient(rgba(75,44,138,0.85),rgba(75,44,138,0.92)),url('https://res.cloudinary.com/djml0aqsp/image/upload/446667w790h527c.jpg_qup8c2') center/cover no-repeat;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;}
+  .app-header{background:linear-gradient(rgba(75,44,138,0.75),rgba(75,44,138,0.85)),url('https://res.cloudinary.com/djml0aqsp/image/upload/446667w790h527c.jpg_qup8c2') center top/cover no-repeat;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;}
+  .login-bg{background:linear-gradient(rgba(75,44,138,0.78),rgba(75,44,138,0.88)),url('https://res.cloudinary.com/djml0aqsp/image/upload/446667w790h527c.jpg_qup8c2') center top/cover no-repeat;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
   input,select,textarea,button{font-family:inherit;}
 </style>
 </head>
@@ -156,7 +157,7 @@ function App() {
   const tabs=[{id:"propuestas",label:"Propuestas"},{id:"problemas",label:"Problemas"},{id:"agenda",label:"Agenda"},...(role==="admin"?[{id:"panel",label:"Panel"}]:[])];
 
   if(screen==="login") return (
-    <div style={{maxWidth:380,margin:"60px auto",padding:"0 16px"}}>
+    <div class="login-bg">
       <div style={{textAlign:"center",marginBottom:32}}>
         <div style={{width:64,height:64,background:PURPLE,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 12px",color:"#fff",fontSize:22,fontWeight:500}}>CP</div>
         <div style={{fontSize:20,fontWeight:500}}>Chaco Propone</div>
