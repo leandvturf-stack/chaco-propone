@@ -20,7 +20,7 @@ input,select,textarea,button{font-family:inherit;}
 const ADMIN_CODE = "senadorgodoylla";
 const MILITANTE_CODE = "llachaco2026";
 const PURPLE = "#4B2C8A";
-const FOTO = "https://res.cloudinary.com/djml0aqsp/image/upload/446667w790h527c.jpg_qup8c2";
+const LOGO = "https://res.cloudinary.com/djml0aqsp/image/upload/la-libertad-avanza-logo_ozr8si.webp";
 const MESES = ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"];
 
 const MUNICIPIOS = ["Resistencia","Barranqueras","Fontana","Vilelas","Presidencia Roca","Villa Ángela","Pampa del Indio","Charata","Quitilipi","Sáenz Peña","Las Breñas","General San Martín","Otro"];
@@ -139,7 +139,9 @@ function App(){
 
   if(screen==="login") return (
     <div style={loginBg}>
-      <div style={{width:72,height:72,background:"rgba(255,255,255,0.18)",border:"3px solid rgba(255,255,255,0.8)",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",color:"#fff",fontSize:24,fontWeight:800,marginBottom:14}}>CP</div>
+      <div style={{width:72,height:72,background:"rgba(255,255,255,0.15)",border:"3px solid rgba(255,255,255,0.8)",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:14,overflow:"hidden"}}>
+        <img src={LOGO} alt="LLA" style={{width:56,height:56,objectFit:"contain"}}/>
+      </div>
       <div style={{fontSize:28,fontWeight:800,color:"#FFFFFF",textShadow:"0 2px 10px rgba(0,0,0,0.8)",marginBottom:6,letterSpacing:0.5}}>Chaco Propone</div>
       <div style={{fontSize:15,fontWeight:700,color:"#FFFFFF",textShadow:"0 2px 8px rgba(0,0,0,0.9)",marginBottom:28,letterSpacing:0.3}}>Sen. Juan Cruz Godoy · Libertad Avanza Chaco</div>
       <div style={{background:"#fff",borderRadius:16,padding:"28px 24px",boxShadow:"0 8px 32px rgba(0,0,0,0.35)",width:"100%",maxWidth:360}}>
@@ -156,7 +158,9 @@ function App(){
     <div style={{maxWidth:420,margin:"0 auto",background:"#fff",minHeight:"100vh"}}>
       <div style={{background:`linear-gradient(rgba(75,44,138,0.55),rgba(75,44,138,0.70)),url('${FOTO}') center 30%/cover no-repeat`,padding:"14px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",position:"sticky",top:0,zIndex:10,minHeight:70}}>
         <div style={{display:"flex",alignItems:"center",gap:10}}>
-          <div style={{width:34,height:34,background:"rgba(255,255,255,0.25)",border:"2px solid rgba(255,255,255,0.8)",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:700,fontSize:12,color:"#fff"}}>CP</div>
+          <div style={{width:34,height:34,background:"rgba(255,255,255,0.15)",border:"2px solid rgba(255,255,255,0.8)",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden"}}>
+            <img src={LOGO} alt="LLA" style={{width:26,height:26,objectFit:"contain"}}/>
+          </div>
           <div>
             <div style={{color:"#fff",fontSize:15,fontWeight:700,textShadow:"0 1px 4px rgba(0,0,0,0.5)"}}>Chaco Propone</div>
             <div style={{color:"rgba(255,255,255,0.9)",fontSize:11,textShadow:"0 1px 3px rgba(0,0,0,0.5)"}}>{user||"Militante"} · {role==="admin"?"Panel Godoy":"Militante"}</div>
